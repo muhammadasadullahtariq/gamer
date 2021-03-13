@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "693035615046",
+    "firebase_url": "https://games-38c60-default-rtdb.firebaseio.com",
+    "project_id": "games-38c60",
+    "storage_bucket": "games-38c60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693035615046:android:fddc3ad77cdeab0d811b47",
+        "android_client_info": {
+          "package_name": "com.ap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "693035615046-fl54k4fo1dqo401f013bk8bg99ul6dhk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ap",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "693035615046-nmfo7mevhb7svogh84d5mtmv24svu3i5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXg86rKanV_d8pQdWLmb4bSTChm3pXhYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "693035615046-nmfo7mevhb7svogh84d5mtmv24svu3i5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

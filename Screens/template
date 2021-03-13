@@ -1,0 +1,18 @@
+import React from "react";
+import { StyleSheet } from "react-native";
+
+
+function screen(){
+    return(a);
+}
+
+
+const styles=StyleSheet.create({
+
+});
+
+
+export default screen;
+
+
+react-native link
