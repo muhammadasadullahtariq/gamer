@@ -13,15 +13,19 @@
     "@react-native-community/masked-view": "^0.1.10",
     "@react-native-firebase/app": "^10.8.1",
     "@react-native-firebase/auth": "^10.8.1",
+    "@react-native-firebase/firestore": "^11.1.0",
     "@react-navigation/native": "^5.9.3",
     "@react-navigation/stack": "^5.14.3",
     "libphonenumber-js": "^1.9.12",
     "react": "16.13.1",
     "react-native": "0.63.4",
+    "react-native-bouncy-checkbox": "^1.0.8",
     "react-native-gesture-handler": "^1.10.3",
+    "react-native-image-picker": "^3.2.1",
     "react-native-reanimated": "^2.0.0",
     "react-native-safe-area-context": "^3.1.9",
     "react-native-screens": "^2.18.0",
+    "react-native-vector-icons": "^8.1.0",
     "typescript": "^4.2.3"
   },
   "devDependencies": {
@@ -38,7 +42,15 @@
     "preset": "react-native"
   },
   "main": "index.js",
-  "author": "",
+  "author": "Asad Ullah",
   "license": "ISC",
-  "description": ""
+  "description": "game",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammadasadullahtariq/gamer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/muhammadasadullahtariq/gamer/issues"
+  },
+  "homepage": "https://github.com/muhammadasadullahtariq/gamer#readme"
 }
