@@ -15,4 +15,4 @@ const styles=StyleSheet.create({
 export default screen;
 
 
-react-native link
+//react-native link
