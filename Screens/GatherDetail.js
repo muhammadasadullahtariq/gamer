@@ -1,33 +1,39 @@
 import React, {useState} from 'react';
-import {StyleSheet, Image, ScrollView, View,TouchableWithoutFeedback} from 'react-native';
+import {
+  StyleSheet,
+  Image,
+  ScrollView,
+  View,
+  TouchableWithoutFeedback,
+} from 'react-native';
 import im from '../Asserts/Images/IMG-20200217-WA0140.jpg';
 import InputComponent from '../Components/inputComponent';
 import Checkox from 'react-native-bouncy-checkbox';
 import TextComponent from '../Components/HeadingText';
 import ButtonComponent from '../Components/ButtonComponent';
-import {launchImageLibrary} from "react-native-image-picker";
+import {launchImageLibrary} from 'react-native-image-picker';
 import parsePhoneNumber from 'libphonenumber-js';
-import auth from '@react-native-firebase/auth';
+import {textData, uploadImage} from '../Components/dataUpload';
 
 var gameArr = [];
 function screen() {
-  const [imageuri,setImage]=useState(im);
+  const [imageuri, setImage] = useState(im);
   const [cod, setCode] = useState(false);
   const [pubg, setPubg] = useState(false);
   const [codMobile, setCodemobile] = useState(false);
   const [uName, setUname] = useState('');
   const [gName, setGname] = useState('');
   const [jNumber, setJnumber] = useState('');
-  const image=()=>{
-    const options={
-      title:"Image Pick",
-      width:720,
-      height:720,
-    }
-launchImageLibrary(options,(response)=>{
-console.log(response);
-setImage({uri:response.uri});
-});
+  const image = () => {
+    const options = {
+      title: 'Image Pick',
+      width: 720,
+      height: 720,
+    };
+    launchImageLibrary(options, (response) => {
+      console.log(response);
+      setImage({uri: response.uri});
+    });
   };
   const uNameHandler = (t) => {
     setUname(() => t);
@@ -39,14 +45,16 @@ setImage({uri:response.uri});
     setJnumber(() => t);
   };
   const submitt = () => {
-    if (cod) gameArr.push('code');else if(gameArr.indexOf('code')>-1)gameArr.splice(gameArr.indexOf('code')); 
+    if (cod) gameArr.push('code');
+    else if (gameArr.indexOf('code') > -1)
+      gameArr.splice(gameArr.indexOf('code'));
     if (codMobile) gameArr.push('codeMobile');
     else if (gameArr.indexOf('codeMobile') > -1)
       gameArr.splice(gameArr.indexOf('codeMobile'));
     if (pubg) gameArr.push('pubg');
     else if (gameArr.indexOf('pubg') > -1)
       gameArr.splice(gameArr.indexOf('pubg'));
-    gameArr=getUnique(gameArr);
+    gameArr = getUnique(gameArr);
     var phoneNumber = parsePhoneNumber(jNumber, 'PK');
     var obj = {
       games: gameArr,
@@ -55,6 +63,8 @@ setImage({uri:response.uri});
       jazzCash: phoneNumber.number,
     };
     console.log({obj});
+    textData(obj);
+    uploadImage(imageuri);
   };
   function getUnique(array) {
     var uniqueArray = [];
