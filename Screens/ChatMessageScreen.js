@@ -6,8 +6,7 @@ import FirstCaht from '../Components/FirstUserComponent';
 import ButtonComponent from '../Components/ButtonComponent';
 
 function screen(props) {
-  const {params} = this.props.navigation.state;
-  this.props.navigation.state.rou
+  //const {params} = this.props.navigation.state;
   return (  
     <View style={styles.mainViewContainer}>
       <ScrollView style={{marginBottom: '10%'}}>

@@ -24,8 +24,9 @@ const component = (props) => {
 
 const styles = StyleSheet.create({
   mainViewContainer: {
-    backgroundColor: 'red',
-    height: 75,
+    marginBottom: 1,
+    backgroundColor: '#BDBDBD',
+    height: 80,
     flexDirection: 'row',
     width: '100%',
   },
@@ -33,11 +34,11 @@ const styles = StyleSheet.create({
     fontSize: 20,
     width: '100%',
     height: '100%',
-    backgroundColor: 'blue',
   },
   imageContainer: {
+    alignSelf: 'center',
     width: 75,
-    height: '100%',
+    height: 75,
     borderRadius: 150 / 2,
     marginHorizontal: '2%',
   },
