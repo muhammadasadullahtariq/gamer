@@ -4,11 +4,12 @@ import React, {useState} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from './Screens/HomeScreen';
-import DetailGatherScreen from "./Screens/GatherDetail";
-import MainScreen from "./Screens/MainScreen";
-import ChatMessage from "./Screens/ChatMessageScreen";
-import CompetitionDetailScreen from "./Screens/CompetitionDetailScreen";
-import UserDetailScreen from "./Screens/UserDetailScreen";
+import DetailGatherScreen from './Screens/GatherDetail';
+import MainScreen from './Screens/MainScreen';
+import ChatMessage from './Screens/ChatMessageScreen';
+import CompetitionDetailScreen from './Screens/CompetitionDetailScreen';
+import UserDetailScreen from './Screens/UserDetailScreen';
+import TeamDetailScreen from './Screens/TeamDetailScreen';
 
 const Stack = createStackNavigator();
 
@@ -17,7 +18,7 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{headerStyle: {backgroundColor: '#2097f5'}}}
-        initialRouteName="competitionDetailScreen">
+        initialRouteName="userDetailScreen">
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="MainScreen" component={MainScreen} />
         <Stack.Screen name="chatMessage" component={ChatMessage} />
@@ -27,6 +28,7 @@ function App() {
           component={CompetitionDetailScreen}
         />
         <Stack.Screen name="userDetailScreen" component={UserDetailScreen} />
+        <Stack.Screen name="teamDetailScreen" component={TeamDetailScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

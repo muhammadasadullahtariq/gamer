@@ -20,7 +20,7 @@
     "@react-navigation/stack": "^5.14.3",
     "libphonenumber-js": "^1.9.12",
     "react": "16.13.1",
-    "react-native": "0.63.4",
+    "react-native": "^0.64.0",
     "react-native-bouncy-checkbox": "^1.0.8",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-image-picker": "^3.2.1",
